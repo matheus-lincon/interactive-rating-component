@@ -1,0 +1,59 @@
+/* ------ THANK YOU STATE */
+
+.thankyou-state {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100vw, -50%);
+
+  opacity: 0;
+  visibility: hidden;
+
+  background-color: var(--dark-blue);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  max-width: 400px;
+
+  text-align: center;
+}
+
+.thankyou-state.toggle {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.thankyou-state #thankyou-image {
+  margin: 2rem;
+}
+
+.thankyou-state .text {
+  margin-top: 2rem;
+}
+
+.thankyou-state .text .title {
+  margin-bottom: 1rem;
+}
+
+.thankyou-state .text p {
+  font-size: 15px;
+  color: var(--medium-grey);
+}
+
+/* ----- RATING */
+
+.thankyou-state .rating {
+  color: var(--orange);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.thankyou-state .rating {
+  background-color: var(--very-dark-blue);
+  padding: 0.6rem;
+  border-radius: 1rem;
+
+  min-width: 200px;
+}

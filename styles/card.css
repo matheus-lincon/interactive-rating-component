@@ -1,0 +1,100 @@
+/* ------ CARD CONTAINER */
+
+.card-container.toggle {
+  transition: 0.5s;
+
+  top: -100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--dark-blue);
+
+  max-width: 400px;
+}
+
+.card-container #title-icon img {
+  background-color: var(--very-dark-blue);
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+
+.card-container .text p {
+  font-size: 15px;
+  color: var(--light-grey);
+  margin-top: 1rem;
+}
+
+/* ------ RATING CONTAINER */
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2rem 0 2rem 0;
+}
+
+.rating-container .rating-number {
+  background-color: var(--very-dark-blue);
+  color: var(--medium-grey);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.rating-container .rating-number:not(:last-child) {
+  margin-right: 10px;
+}
+
+.rating-container .rating-number:hover {
+  background-color: var(--medium-grey);
+  color: var(--white);
+  transition: 0.5s;
+}
+
+.rating-container .rating-number.selected {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+/* ------ BUTTON */
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 1.1rem;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button:hover {
+  transition: 0.5s;
+  background-color: var(--white);
+  color: var(--orange);
+}
